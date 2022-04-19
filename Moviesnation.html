@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoviesNation</title>
+    <style>
+        body{
+            background-color:rgb(184, 171, 184);
+        }
+        h1{
+            text-align: center;
+            background-position: center;
+            /* color: #8c0073 ; */
+            color: #8c0073;
+            font-size:0.5in;
+            padding:0%;
+            margin:0%;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-shadow: 3px 5px 6px black;
+            font-weight: 2500px;
+        
+        }
+  
+        #menu > ul {
+               list-style: none;
+               display:flex;
+               position: relative;
+
+
+        }
+        #menu ul a
+      {
+          display:block;
+          color:#fff;
+          text-decoration:none;
+          font-weight:700;
+          font-size:15px;
+          line-height:32px;
+          margin: 8px;
+          padding:2px;
+          font-family:Helvetica,Arial,sans-serif;
+  }
+  #menu ul li
+  {  
+    background-color: rgb(38, 86, 117);
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0
+  }
+  #menu ul li.active
+  {
+    background:#0e7238
+  }
+        
+  #menu ul ul li:hover{
+    border-left: 3px solid #2c3e50;
+  }
+  #menu ul ul
+  {
+    display:none;
+    position:absolute;
+    top:100%;
+    left: 20px;
+    
+    padding:1px;
+  }
+  #menu ul ul li
+  {
+    width: 10px;
+    padding-right: 60px;
+    padding-left: 10px;
+    list-style: none;
+    float:inline;
+    width:70px;
+    border-left: 2px solid #27ae60;
+  }
+        #menu ul li a{
+           padding:32px;
+           font-size: 20px;
+           text-decoration: none;
+        }
+        #menu ul li li:hover{
+          text-decoration:none;
+          background-color: green;
+          float: auto;
+        }
+        
+        #menu ul li:hover > ul{
+          cursor: pointer;
+          font-size: 24px;
+          color: rgb(232, 240, 238);
+          display: block;
+          float: none;
+        }
+       a{
+         text-shadow: 3px 3px 5px black;
+         text-decoration:none;
+         color: white;
+       font-family:Arial, "Helvetica Neue", Helvetica, sans-serif;
+       }
+        main table{
+            text-align:right;
+        }
+        div:tr{
+            display: inline;
+            margin: 20px;
+            border:5px;
+            padding: 20%;
+        }
+        p{
+            direction: initial;
+            margin: 0 0 0;
+            display:table-footer-group;
+
+        }
+        .main__container{
+            padding-top:30px;
+            display:flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .each__div{
+            margin-top: 30px;
+            max-width: 300px;
+             height: 300px;
+             padding: 50px;
+             background-color: rgb(170, 79, 43);
+             box-shadow: 3px 4px -5px 5px gray;
+             border-radius: 10px;
+        }
+        .each__div:hover{
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+        }
+        .each__div >img{
+             margin-top: 20px;
+             width: 100%;
+             height: 200px;
+             object-fit: contain; 
+             text-align: center;
+             
+          
+        }
+        .each__div >p{
+            color: aliceblue;
+            font-size: 18px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <h1>MoviesNation</h1>
+    <div id="menu" >
+        <ul> 
+                <li><a href="#">HOME</a></li>
+                <li><a href="Anime.html" > ANIME</a></li>
+                <li><a href="#">SERIES</a></li>
+                <li><a href="MoviesHub.html">MOVIES</a></li>
+                <li><a href="#">GENRE</a>
+                <ul>
+                  <li>Action</li>
+                  <li>Adventure</li>
+                  <li>Animation</li>
+                  <li>Comedy</li>
+                  <li>Horror</li>
+                  <li>Sci-Fi</li>
+                  <li>Fantasy</li>
+                  <li>Drama</li>
+                  <li>Mystery</li>
+                  <li>Thriller</li>
+                </ul></li>
+                <li><a href="#" >QUALITY</a>
+                <ul><li>360p</li>
+                  <li>480p</li>
+                  <li>720p</li>
+                  <li>1080p</li>
+                </ul></li>
+                <li><a href="#">YEAR</a>
+                     <ul>
+                        <li>2021</li>
+                        <li>2020</li>
+                        <li>2019</li>
+                        <li>2018</li>
+                        <li>2017</li>
+                        <li>2016</li>
+                        <li>2015</li>
+                        <li>2014</li>
+                        <li>2013</li>
+                        <li>2012</li>
+                        <li>2011</li>
+                     </ul>
+                 </li>
+        
+                  <li><a href="#">ABOUT</a></li>
+                  </li>
+        </ul>
+      </div>
+        
+        <div class="main__container"> 
+            <div class="each__div">
+                   <img src="https://tse4.mm.bing.net/th?id=OIP.hpkuayIexG85D-mRi8VTPwHaEK&pid=Api&P=0&w=324&h=183" alt="">
+                   <p><a href="https://econation.xyz/iebeidhekdj57ebsidu2748dbdjuhsh3bjcudh/?token=VjRxbEtZQURKS0dKc2hHcUl3VGxub0hJVUFHcXRaSDhHblRJcjZ1U3pLVkNYWkIwcHB2ZmMyanZaY1dISEtNdlpDNHBDRGFCNDVYU0dhbGpCMFRjWUE9PQ"> 
+                       Titanic Dual Audio 720p | Titanic Hindi dubbed</a></p>
+            </div>
+            <div class="each__div">
+                <img src="https://images6.alphacoders.com/372/thumbbig-372417.webp" alt="">
+                <a href="https://images6.alphacoders.com/372/thumbbig-372417.webp">Download RobinHood 720p Dual Audio</a> 
+                    </p>
+         </div>
+         <div class="each__div">
+            <img src="https://images2.alphacoders.com/424/thumbbig-42470.webp" alt="">
+            <p><a href="https://econation.xyz/canwedance737makelovejekb76niwwahat/?token=VjRxbEtZQURKS0dKc2hHcUl3VGxuaHNyNUM5TE56b3doZVY0SHZmUE8zdU4yblF3S1k1THFaNVdBeGhoUy9XbEliM2I2TFBOWVdJZW9UN3ZwczFZK2c9PQ">Download Trasformers(2007) Dual Audio 720p</a></p>
+     </div>
+     <div class="each__div">
+        <img src="https://images5.alphacoders.com/112/thumbbig-1121105.webp" alt="">
+        <p><a href="https://econation.xyz/fdsa43243124123gsdgdfshfg342/?token=VjRxbEtZQURKS0dKc2hHcUl3VGxubDI0UW8rN2RnQTdHRm1jR1oyRjFNM01aY0ZTeDJRU1VSdVJKSWZqQVh0SQ">Download Godzilla 2  King Of Monster (2019) Dual audio 720p 
+        </a></p>
+ </div>
+ <div class="each__div">
+    <img src="https://images.alphacoders.com/114/thumbbig-1149903.webp" alt="">
+    <p><a href="https://econation.xyz/llunaanaksnskakabfjdoaaakcbeklandkd/?token=VjRxbEtZQURKS0dKc2hHcUl3VGxuaWI5TWxhZ1A0eFZtNlp5WlY4ZGd2TVlCa2hzcXJkb0dVY3IxZ2xyVmVicDQrdFlIbzdITlM4cUV1c3N4WEZJQ1E9PQ">Luca 720p Hindi Dubbed | Luca Dual Audio 720p</a>
+        </p>
+</div>
+ <div class="each__div">
+    <img src="https://images.alphacoders.com/115/thumbbig-1156492.webp" alt="" target="_blank">
+    
+    <p>
+      <a href="https://slayycrypto.com/uj6hugyuhguutyhtyr/?token=WE1QYXVhRG9ZdHYyNjljaER2WHA1WW5CdDBtMDFla3pkTmZBQ2RTczdsU004VkJrRFFWWTNSV3dXK1U0cFhzSg">Download Black Widow Dual Audio </a></p>
+      
+</div>
+           
+        </div>
+        
+
+
+</html>
